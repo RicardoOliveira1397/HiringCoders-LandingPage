@@ -1,7 +1,90 @@
+:root{
+    --color-text: #fff;;
+}
+
+*{
+    font-family: Varella;
+}
+
 body{
     box-sizing: border-box;
     margin:0;
-    background: #00439C;
+    background-color: #053472;
 }
 
+header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 50px;
+}
 
+/* HEADER */
+
+.header-title{
+    color: var(--color-text);
+    font-weight:bolder;
+    font-size:30px;
+}
+.header-logo img {
+    width: 20px;
+    margin-left: 5px;
+    height:auto;
+    width:45px;
+}
+
+/* SECTION */
+
+.container{
+    display:flex;
+    height:570px;
+    justify-content:center;
+    background-color: #021e42;
+    border-radius:10px;
+    margin: 0px 30px;
+}
+
+/* LEFT-SIDE */
+
+.left-side, .right-side{
+    flex:1;
+}
+
+.left-side{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.left-side-banner{
+    text-align: center;
+    color: var(--color-text);
+    font-size:60px;
+    font-family: 'Times New Roman';
+}
+
+.left-side-banner span {
+    border-bottom: 3px solid #fff;
+    padding-bottom:5px;
+}
+
+.left-side-description{
+    text-align: center;
+    margin-top: 30px;
+    color: var(--color-text);
+    font-size: 18px;
+    font-family: 'Times New Roman';
+}
+
+.left-side-description span{
+    font-weight:900;
+    text-decoration:underline;
+}
+
+.left-side-product{
+    margin-top:40px;
+}
+.left-side-product img{
+    width:100%;
+    height:auto;
+}
