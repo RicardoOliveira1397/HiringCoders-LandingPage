@@ -10,6 +10,7 @@ body{
     box-sizing: border-box;
     margin:0;
     background-color: #053472;
+    color: var(--color-text)
 }
 
 header{
@@ -22,7 +23,6 @@ header{
 /* HEADER */
 
 .header-title{
-    color: var(--color-text);
     font-weight:bolder;
     font-size:30px;
 }
@@ -37,7 +37,6 @@ header{
 
 .container{
     display:flex;
-    height:570px;
     justify-content:center;
     background-color: #021e42;
     border-radius:10px;
@@ -53,13 +52,11 @@ header{
 .left-side{
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items: center;
 }
 .left-side-banner{
+    margin-top:20px;
     text-align: center;
-    color: var(--color-text);
-    font-size:60px;
+    font-size:6vw;
     font-family: 'Times New Roman';
 }
 
@@ -70,9 +67,8 @@ header{
 
 .left-side-description{
     text-align: center;
-    margin-top: 30px;
-    color: var(--color-text);
-    font-size: 18px;
+    margin: 30px 0px 0px 15px;
+    font-size: 1.5vw;
     font-family: 'Times New Roman';
 }
 
@@ -83,8 +79,80 @@ header{
 
 .left-side-product{
     margin-top:40px;
+    text-align:center;
 }
 .left-side-product img{
-    width:100%;
+    width:90%;
     height:auto;
+}
+
+/* RIGHT-SIDE */ /* FORM */
+.right-side-container{
+    background-color:#053472;
+    margin:20px;
+}
+.right-side-title-container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.right-side-title{
+    font-size: 3vw;
+    padding-top:7px;
+    font-weight:200;
+}
+.right-side-subtitle{
+    text-align:center;
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+    font-size: 17px;
+}
+
+/* FORMS */
+.right-side-form-container{
+    margin-top: 25px;
+}
+
+form:not(.checkbox){
+    display:flex;
+    flex-direction:column;
+}
+
+form label:not(.whatsapp), input {
+    margin: 0px 20px;
+}
+
+.whatsapp{
+    font-size: 1.5vw;
+}
+input{
+    outline:none;
+    border-radius:3px;
+    border:0;
+    height:25px;
+    font-size:medium;
+}
+
+.checkbox{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    margin-right: 5px;
+}
+.checkbox img{
+    width: 20px;
+    margin-left: 5px;
+}
+
+button{
+    margin: 70px 20px;
+    height: 70px;
+    background-color: #b8855b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 2vw;
+    cursor:pointer;
 }
