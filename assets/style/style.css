@@ -3,7 +3,7 @@
 }
 
 *{
-    font-family: Varella;
+    font-family: Roboto;
 }
 
 body{
@@ -25,12 +25,10 @@ header{
 .header-title{
     font-weight:bolder;
     font-size:30px;
+    font-size: 5vh;
 }
 .header-logo img {
-    width: 20px;
-    margin-left: 5px;
-    height:auto;
-    width:45px;
+    width: 4vw;
 }
 
 /* SECTION */
@@ -56,8 +54,7 @@ header{
 .left-side-banner{
     margin-top:20px;
     text-align: center;
-    font-size:6vw;
-    font-family: 'Times New Roman';
+    font-size:5vw;
 }
 
 .left-side-banner span {
@@ -67,9 +64,10 @@ header{
 
 .left-side-description{
     text-align: center;
-    margin: 30px 0px 0px 15px;
-    font-size: 1.5vw;
-    font-family: 'Times New Roman';
+    font-size: 1.3vw;
+    margin: 30px 0px 0px 20px;
+    line-height: 30px;
+    font-weight:300;
 }
 
 .left-side-description span{
@@ -78,7 +76,6 @@ header{
 }
 
 .left-side-product{
-    margin-top:40px;
     text-align:center;
 }
 .left-side-product img{
@@ -98,16 +95,17 @@ header{
     align-items:center;
 }
 .right-side-title{
-    font-size: 3vw;
-    padding-top:7px;
-    font-weight:200;
+    text-align:center;
+    font-size: 4vw;
+    font-weight:bold;
 }
 .right-side-subtitle{
     text-align:center;
     margin-top: 10px;
     padding: 5px;
     border-bottom: 1px solid #fff;
-    font-size: 17px;
+    font-size: 3vh;
+    font-weight: 500;
 }
 
 /* FORMS */
@@ -125,34 +123,87 @@ form label:not(.whatsapp), input {
 }
 
 .whatsapp{
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+    margin-left: 5px;
+    margin-right: 3px;
 }
 input{
     outline:none;
     border-radius:3px;
     border:0;
-    height:25px;
+    height:3vh;
     font-size:medium;
 }
 
 .checkbox{
     display:flex;
     align-items:center;
-    flex-wrap:wrap;
-    margin-right: 5px;
+    margin: 0px 20px;
 }
 .checkbox img{
-    width: 20px;
-    margin-left: 5px;
+    width: 2vw;
+}
+
+#check{
+    margin:0;
 }
 
 button{
-    margin: 70px 20px;
-    height: 70px;
+    margin: 3vh 2vw;
+    height: 12vh;
     background-color: #b8855b;
     border: none;
     border-radius: 5px;
     color: #fff;
     font-size: 2vw;
     cursor:pointer;
+}
+
+@media (min-width: 570px) and (max-width: 768px){
+    .left-side-product img {
+        margin-top: 80px;
+    }
+    .left-side-description{
+        line-height: 20px;
+        font-size: 2.3vh;
+    }
+    .checkbox img {
+        display:none;
+    }
+}
+
+@media (max-width: 569px) {
+    .container{
+        flex-direction:column;
+    }
+    .left-side-banner {
+        display:flex;
+        flex-direction: column;
+    }
+    .left-side-banner span {
+        border-bottom: 1px solid #fff;
+    }
+    .left-side-description{
+        margin:0;
+        margin: 10px 10px;
+    }
+    .left-side-description{
+        line-height: 12px;
+        font-size: 1.6vh;
+    }
+    .right-side-title{
+        margin-top: 10px;
+    }
+    form label:not(.whatsapp), input {
+        font-size: 15px;
+    }
+    .checkbox img {
+        display:none;
+    }
+    .whatsapp {
+        font-size: 2.3vw;
+    }
+    button {
+        height: 3vh;
+    }
 }
