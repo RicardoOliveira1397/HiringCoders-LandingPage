@@ -133,6 +133,8 @@ input{
     border:0;
     height:3vh;
     font-size:medium;
+    color: #000;
+    font-weight:bolder;
 }
 
 .checkbox{
